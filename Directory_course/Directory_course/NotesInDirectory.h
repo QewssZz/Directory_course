@@ -31,5 +31,17 @@ private:
 
 class Human : public NotesInDirectory 
 {
+public:
+private:
+	std::string FullName, Gender;
 	
+};
+
+class Organization : public NotesInDirectory 
+{
+public:
+	std::string GetNameOfOrg() const;
+	std::string GetActivity() const;
+private:
+	std::string NameOfOrg, Activity;
 };
