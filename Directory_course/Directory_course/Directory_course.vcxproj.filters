@@ -21,9 +21,15 @@
     <ClCompile Include="NotesInDirectory.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Directory.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NotesInDirectory.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Directory.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
