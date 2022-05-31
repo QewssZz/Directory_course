@@ -26,3 +26,12 @@ void NotesInDirectory::RemoveEmail(string email)
 		e_mails.erase(found);
 	}
 }
+
+void NotesInDirectory::RemovePhone(Phone phone) 
+{
+	auto found = find(phones.begin(), phones.end(), phone);
+	if (found != phones.end())
+	{
+		phones.erase(found);
+	}
+}
