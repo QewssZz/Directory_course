@@ -15,7 +15,7 @@ void Subscriber::AddPhone(Phone* ptrPhone)
     auto found = find(phones.begin(), phones.end(), ptrPhone);
     if (found != phones.end())
     {
-        throw std::invalid_argument("Phone xist)");
+        throw std::invalid_argument("Phone exist)");
     }
     phones.push_back(ptrPhone);
 }
@@ -29,11 +29,6 @@ void Subscriber::AddEmail(std::string e_mail)
     }
     emails.push_back(e_mail);
 }
-
-/*bool Subscriber::FindByPhone(const Phone* phone)const
-{
-    return (find(phones.begin(), phones.end(), phone) != phones.end());
-}*/
 
 bool Subscriber::FindByPhone(const std::string& phone)const
 {
